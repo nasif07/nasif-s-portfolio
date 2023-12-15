@@ -20,7 +20,7 @@ const MySkills = () => {
 
 
     return (
-        <div className=" bg-[#111]">
+        <section id="skill" className=" bg-[#111]">
             <Container>
                 <Title first={"My"} last={"Skills"} description={"Let’s Explore Popular Skills & Experience"}></Title>
 
@@ -37,7 +37,7 @@ const MySkills = () => {
                     </div>)}
                 </div>
             </Container>
-        </div>
+        </section>
     );
 };
 

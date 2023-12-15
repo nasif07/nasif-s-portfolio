@@ -1,6 +1,7 @@
 
 
 // import Banner from './Section/Banner/Banner'
+import AboutMe from './Section/AboutMe/AboutMe'
 import Banner from './Section/Banner/Banner'
 import ContactMe from './Section/ContactMe/ContactMe'
 import Footer from './Section/Footer/Footer'
@@ -15,6 +16,7 @@ function App() {
     <>
      <NavBar></NavBar>
       <Banner></Banner>
+      <AboutMe></AboutMe>
       <MySkills></MySkills>
       <ExperienceEducation></ExperienceEducation>
       <MyProjects></MyProjects>

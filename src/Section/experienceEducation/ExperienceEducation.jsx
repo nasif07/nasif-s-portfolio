@@ -4,7 +4,7 @@ import Title from "../../components/Title";
 import { MdDeveloperMode } from "react-icons/md";
 const ExperienceEducation = () => {
     return (
-        <div className="bg-[#060606] text-white">
+        <section id="backend" className="bg-[#060606] text-white">
             <Title first={"My"} last={"Backend"}></Title>
             <Container>
                 <h1 className="text-center pb-14 text-2xl font-semibold">My Educational Background</h1>
@@ -17,7 +17,7 @@ const ExperienceEducation = () => {
                             <time className="font-mono italic text-[#B1B1A2]">2020-Present</time>
                             <div className="text-[20px] font-medium text-[#C9F31D]">Diploma In Engineering</div>
                             <div className="lg:text-2xl md:text-[18px] font-black">Chattogram Polytechnic Institute</div>
-                            <p className="text-[#B1B1A2]">Now I am student of Chattogram Polytechnic Institute. i am a student of electronics Department</p>
+                            <p className="text-[#B1B1A2]">Now I am student of Chattogram Polytechnic Institute. I am a student of Electronics Department</p>
                             
                         </div>
                         <hr />
@@ -53,7 +53,7 @@ const ExperienceEducation = () => {
                     </li>
                     </ul>
             </Container>
-        </div>
+        </section>
     );
 };
 

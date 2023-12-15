@@ -35,7 +35,7 @@ const MyProjects = () => {
         backgroundSize: 'cover'
     }
     return (
-        <div className="bg-[#111111]">
+        <section id="projects" className="bg-[#111111] hidden md:block">
             <Title first={"My"} last={"Projects"}></Title>
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto lg:py-20 md:py-14 py-6">
@@ -94,7 +94,7 @@ const MyProjects = () => {
                     </div>
                 </div>
             </Container>
-        </div>
+        </section>
     );
 };
 
