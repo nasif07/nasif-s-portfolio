@@ -37,7 +37,7 @@ const ExperienceEducation = () => {
                     </li>
                 </ul>
                 <h1 className="text-center p-14 text-2xl font-semibold">My Experience</h1>
-                <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical lg:pb-16 md:pb-12 pb-6">
                     <li>
                         <div className="timeline-middle">
                             <MdDeveloperMode className="text-[#C9F31D] text-3xl m-3 mt-0"></MdDeveloperMode>
