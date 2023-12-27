@@ -26,7 +26,7 @@ const MySkills = () => {
 
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-20">
-                    {skills.map(skill => <div key={skill.skillName} className="card hover:border  overflow-hidden transition-all duration-200 ease-in-out border-[#C9F31D] h-[300px] card-compact bg-[#1F1F1F] shadow-xl relative">
+                    {skills.map(skill => <div data-aos-duration="700" data-aos="zoom-in" key={skill.skillName} className="card hover:border  overflow-hidden transition-all duration-200 ease-in-out border-[#C9F31D] h-[300px] card-compact bg-[#1F1F1F] shadow-xl relative">
                         <div className="flex justify-center items-center h-[150px] "><img className="max-w-[150px] max-h-[250px]" src={skill.logo} alt="Shoes" /></div>
                         <div className="card-body">
                             <h2 className="card-title flex items-center justify-center text-white">{skill.skillName}</h2>

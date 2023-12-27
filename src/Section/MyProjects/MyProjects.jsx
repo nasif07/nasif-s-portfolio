@@ -39,7 +39,7 @@ const MyProjects = () => {
             <Title first={"My"} last={"Projects"}></Title>
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto lg:py-20 md:py-14 py-6">
-                    <div>
+                    <div  data-aos-duration="700" data-aos="zoom-in">
                         <div
                             style={{ ...boxStyle, ...box1style, hover: { backgroundPosition: "top" } }}
                             onMouseEnter={() => setHovered(true)}
@@ -53,7 +53,7 @@ const MyProjects = () => {
                             <a href="https://github.com/nasif07/dream-car-shop-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos-duration="700" data-aos="zoom-in">
                         <div
                             style={{ ...boxStyle, ...box2style }}
                             onMouseEnter={() => setHovered(true)}
@@ -66,7 +66,7 @@ const MyProjects = () => {
                             <a href="https://github.com/nasif07/knowledge-library-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos-duration="700" data-aos="zoom-in">
                         <div
                             style={{ ...boxStyle, ...box3style }}
                             onMouseEnter={() => setHovered(true)}
@@ -79,7 +79,7 @@ const MyProjects = () => {
                             <a href="https://github.com/nasif07/paw-vista-pet-adoption-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos-duration="700" data-aos="zoom-in">
                         <div
                             style={{ ...boxStyle, ...box4style }}
                             onMouseEnter={() => setHovered(true)}
