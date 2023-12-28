@@ -1,6 +1,6 @@
 // import profile from '../../assets/profile.jpeg'
 import bg from "../../assets/bannerBG.jpg";
-import resume from "../../assets/Nasif's-resume.pdf";
+import resume from "../../assets/Nasiful-Islam-Nasif's-Resume.pdf";
 import { FaFacebook, FaGithub, FaGoogle, FaLinkedin } from "react-icons/fa6";
 import { IconButton } from "@material-tailwind/react";
 import PrimaryButton from "../../components/PrimaryButton";
