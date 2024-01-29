@@ -5,7 +5,7 @@
 
 const NavBar = () => {
     return (
-        <div>
+        <div className="font-Space_Grotesk">
             <div className="drawer px-4 md:px-10 lg:px-[100px] fixed z-10 bg-black text-white bg-opacity-30">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">

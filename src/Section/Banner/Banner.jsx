@@ -17,7 +17,7 @@ const Banner = () => {
     }
     return (
         <>
-            <section id='home' className="md:h-[100vh] bg-cover h-[70vh]" style={myStyle} >
+            <section id='home' className="md:h-[100vh] bg-cover h-[70vh] font-Space_Grotesk" style={myStyle} >
                 <div className="md:h-[100vh] h-[100vh]" style={{ backgroundColor: "rgba(0,0,0,0.80)" }}>
                     <div className=" text-white max-w-[1600px] mx-auto px-4 md:px-10 flex items-center h-full ">
                         <div data-aos="fade-down" data-aos-duration="1500" className="md:space-y-5 space-y-1.5">
