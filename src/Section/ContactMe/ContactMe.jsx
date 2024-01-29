@@ -1,7 +1,6 @@
 import { FaLocationArrow, FaMessage, FaPhone } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import Container from "../../components/Container";
-import PrimaryButton from "../../components/PrimaryButton";
 import Title from "../../components/Title";
 
 const ContactMe = () => {

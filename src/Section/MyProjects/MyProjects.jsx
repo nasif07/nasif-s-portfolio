@@ -48,9 +48,9 @@ const MyProjects = () => {
 
                         </div>
                         <div className="flex justify-around px-12 my-12">
-                            <a href="https://dream-car-shop.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
-                            <a href="https://github.com/nasif07/dream-car-shop-client?tab=readme-ov-file"><button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
-                            <a href="https://github.com/nasif07/dream-car-shop-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
+                            <a target="_blank" href="https://dream-car-shop.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/dream-car-shop-client?tab=readme-ov-file"><button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/dream-car-shop-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
                     <div data-aos-duration="700" data-aos="zoom-in">
@@ -61,9 +61,9 @@ const MyProjects = () => {
 
                         </div>
                         <div className="flex justify-around px-12 my-12">
-                            <a href="https://knowledge-library-c3978.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
-                            <a href="https://github.com/nasif07/knowledge-library-client?tab=readme-ov-file"><button className="btn bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
-                            <a href="https://github.com/nasif07/knowledge-library-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
+                            <a target="_blank" href="https://knowledge-library-c3978.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/knowledge-library-client?tab=readme-ov-file"><button className="btn bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/knowledge-library-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
                     <div data-aos-duration="700" data-aos="zoom-in">
@@ -74,9 +74,9 @@ const MyProjects = () => {
 
                         </div>
                         <div className="flex justify-around px-12 my-12">
-                            <a href="https://paw-vista.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
-                            <a href="https://github.com/nasif07/paw-vista-pet-adoption-client"><button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
-                            <a href="https://github.com/nasif07/paw-vista-pet-adoption-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
+                            <a target="_blank" href="https://paw-vista.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/paw-vista-pet-adoption-client"><button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/paw-vista-pet-adoption-server"><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
                     <div data-aos-duration="700" data-aos="zoom-in">
@@ -87,9 +87,9 @@ const MyProjects = () => {
 
                         </div>
                         <div className="flex justify-around px-12 my-12">
-                            <a href="https://knowledge-library-c3978.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
-                            <a href=""><button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
-                            <a href=""><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
+                            <a target="_blank" href="https://event-agency-project.web.app/"><button className="btn bg-[#C9F31D] border-0"><FaEye></FaEye>Live Link</button></a>
+                            <a target="_blank" href="https://github.com/nasif07/event-agency-project?tab=readme-ov-file"><button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]"><FaGithub></FaGithub>Client Code</button></a>
+                            <a target="_blank" href=""><button className="btn  bg-[#C9F31D] border-0"><FaGithub></FaGithub>Server Code</button></a>
                         </div>
                     </div>
                 </div>
