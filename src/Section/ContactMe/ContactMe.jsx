@@ -8,11 +8,10 @@ const ContactMe = () => {
         <section id="contact" className="bg-[#060606] text-white">
             <Title first={"Contact"} last={"Me"}></Title>
             <div className="hero min-h-screen ">
-                {/* <Title first={"My"} last={"Skills"} description={"Let’s Explore Popular Skills & Experience"}></Title> */}
 
                 <Container>
                     <div className="lg:flex gap-4">
-                        <div   data-aos="fade-up" data-aos-duration="1000" className="flex-1 space-y-3">
+                        <div   data-aos="" data-aos-duration="1000" className="flex-1 space-y-3">
                             <h5 className="text-[25px] text-[#B1B1A2]">Get In Touch</h5>
                             <h1 className="md:text-6xl text-4xl font-bold">Let’s Talk For your <br /> <span className="text-[#C9F31D]">Next Projects</span></h1>
                             <p className="py-6 text-[#B1B1A2]">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
@@ -24,7 +23,7 @@ const ContactMe = () => {
                                 </div>
                                 <div className="flex gap-6 items-center">
                                     <MdOutlineEmail className="text-[#C9F31D] text-3xl"></MdOutlineEmail>
-                                    <p className="text-[#B1B1A2] text-xl">nasifulislamnasif23@gmail.com</p>
+                                    <p className="text-[#B1B1A2] md:text-xl">nasifulislamnasif23@gmail.com</p>
                                 </div>
                                 <div className="flex gap-6 pb-6 items-center md:pb-6">
                                     <FaPhone className="text-[#C9F31D] text-3xl"></FaPhone>
@@ -32,13 +31,13 @@ const ContactMe = () => {
                                 </div>
                             </div>
                         </div>
-                        <div   data-aos="fade-up" data-aos-duration="1000" className="bg-[#1F1F1F] p-8 rounded-3xl flex-1 mb-12">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="bg-[#1F1F1F] p-8 rounded-3xl flex-1 mb-12">
                             <div className="lg:flex gap-6 pb-6">
                                 <label className="form-control w-full">
                                     <div className="label">
                                         <span className="label-text text-xl pb-3 text-white">What is your name? <span className="text-[25px] text-[#C9F31D]">*</span></span>
                                     </div>
-                                    <input type="text" placeholder="Write Your Full Name" className="input rounded-xl input-bordered w-full  md:input-lg bg-[#2F2F2F]" />
+                                    <input type="text" placeholder="Write Your Full Name" className="input rounded-xl input-bordered  w-full  md:input-lg bg-[#2F2F2F]" />
                                 </label>
                                 <label className="form-control w-full">
                                     <div className="label">
