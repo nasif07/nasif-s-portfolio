@@ -13,7 +13,7 @@ const ExperienceEducation = () => {
                         <div className="timeline-middle">
                             <FaBook className="text-[#C9F31D] text-2xl m-3 mt-0"></FaBook>
                         </div>
-                        <div   data-aos="fade-right" data-aos-duration="1000" className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px] ">
+                        <div   data-aos="fade-up" data-aos-duration="1000" className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px] ">
                             <time className="font-mono italic text-[#B1B1A2]">2020-Present</time>
                             <div className="text-[20px] font-medium text-[#C9F31D]">Diploma In Engineering</div>
                             <div className="lg:text-2xl md:text-[18px] font-black">Chattogram Polytechnic Institute</div>
@@ -27,7 +27,7 @@ const ExperienceEducation = () => {
                         <div className="timeline-middle">
                             <FaBook className="text-[#C9F31D] text-2xl m-3"></FaBook>
                         </div>
-                        <div data-aos="fade-left" data-aos-duration="1000" className="timeline-end mb-10 space-y-2.5 max-w-[450px]">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="timeline-end mb-10 space-y-2.5 max-w-[450px]">
                         <time className="font-mono italic text-[#B1B1A2]">2019-2020</time>
                             <div className="text-[20px] font-medium text-[#C9F31D]">SSC / Science</div>
                             <div className="lg:text-2xl md:text-[18px] font-black">Halishahar Alhaj Mohabbat Ali City Corp. High School</div>
@@ -42,7 +42,7 @@ const ExperienceEducation = () => {
                         <div className="timeline-middle">
                             <MdDeveloperMode className="text-[#C9F31D] text-3xl m-3 mt-0"></MdDeveloperMode>
                         </div>
-                        <div data-aos="fade-right" data-aos-duration="1000" className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px]">
+                        <div data-aos="fade-up" data-aos-duration="1000" className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px]">
                             <time className="font-mono italic text-[#B1B1A2]">2021-Present</time>
                             <div className="text-[20px] font-medium text-[#C9F31D]">Web Development</div>
                             <div className="lg:text-2xl md:text-[18px] font-black">2 year + self learning Experience</div>

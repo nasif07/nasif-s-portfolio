@@ -11,10 +11,10 @@ const AboutMe = () => {
             <Title first={"About"} last={"Me"}></Title>
             <Container>
                 <div className="lg:flex justify-around items-center lg:py-16">
-                    <div   data-aos="fade-right" data-aos-duration="1500" className="mx-auto flex items-center justify-center flex-1">
+                    <div   data-aos="fade-up" data-aos-duration="1500" className="mx-auto flex items-center justify-center flex-1">
                         <img className="max-w-[450px] w-[200px] md:w-[450px] rounded-3xl" src={profile} alt="" />
                     </div>
-                    <div   data-aos="fade-left" data-aos-duration="1000" className="space-y-3 flex-1">
+                    <div   data-aos="fade-up" data-aos-duration="1000" className="space-y-3 flex-1">
                         <h5 className="md:text-[25px] pt-4 text-[#B1B1A2]">Know Me More</h5>
                         <h1 className="md:text-6xl text-4xl font-bold">I'm <span className="text-[#C9F31D]">Nasif</span> a MERN stack web Developer.</h1>
                         <p className="py-6 text-[#B1B1A2]">Hello, I'm Nasif, a dynamic and skilled web developer specializing in the MERN stack. With skilled in MongoDB, Express.js, React.js, and Node.js, I've successfully crafted responsive and feature-rich websites that blend functionality with a seamless user experience.</p>
@@ -26,7 +26,7 @@ const AboutMe = () => {
                             </div>
                            
                             <div className="flex gap-6 items-center">
-                                <MdOutlineEmail className="text-[#C9F31D] text-3xl"></MdOutlineEmail>
+                                <MdOutlineEmail className="text-[#C9F31D]  text-3xl"></MdOutlineEmail>
                                 <p className="text-[#B1B1A2] text-xl">nasifulislamnasif23@gmail.com</p>
                             </div>
                             <div className="flex gap-6 items-center">
