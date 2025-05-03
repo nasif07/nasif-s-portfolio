@@ -10,7 +10,7 @@ const Title = ({first, last, description}) => {
             {/* <div className='relative border-s-8 border-[#C9F31D] ps-3'> */}
             <h2 className='text-4xl -mt-12 md:-mt-20 lg:-mt-24 md:text-6xl font-bold md:font-extrabold text-[#FFFFFF] z-20'>{first} <span className="text-[#C9F31D]">{last}</span></h2>
             {/* <p className='absolute bottom-0 -z-10  md:text-[90px] lg:text-9xl mx-auto opacity-5'>{children}</p> */}
-            <p className="pt-16 text-white text-xl font-medium">{description}</p>
+            <p className="pt-16 text-[#B1B1A2] text-xl font-medium">{description}</p>
         </div>
         // </div>
     );

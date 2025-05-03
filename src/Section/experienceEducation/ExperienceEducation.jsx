@@ -15,19 +15,38 @@ const ExperienceEducation = () => {
             <div className="timeline-middle">
               <FaBook className="text-[#C9F31D] text-2xl m-3 mt-0"></FaBook>
             </div>
-            <div className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px] ">
+            <div className="timeline-end mb-10 space-y-2.5 max-w-[450px] ">
               <time className="font-mono italic text-[#B1B1A2]">
-                2020-Present
+                2025-Present
               </time>
               <div className="text-[20px] font-medium text-[#C9F31D]">
-                Diploma In Engineering
+                BSc in Computer Science and Engineering
+              </div>
+              <div className="lg:text-2xl md:text-[18px] font-black">
+                East Delta University
+              </div>
+              <p className="text-[#B1B1A2]">
+                Currently pursuing a BSc in Computer Science and Engineering at
+                East Delta University,
+              </p>
+            </div>
+            <hr />
+          </li>
+          <li>
+            <div className="timeline-middle">
+              <FaBook className="text-[#C9F31D] text-2xl m-3 mt-0"></FaBook>
+            </div>
+            <div className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px] ">
+              <time className="font-mono italic text-[#B1B1A2]">2020-2024</time>
+              <div className="text-[20px] font-medium text-[#C9F31D]">
+                Diploma In Electronics Engineering
               </div>
               <div className="lg:text-2xl md:text-[18px] font-black">
                 Chattogram Polytechnic Institute
               </div>
               <p className="text-[#B1B1A2]">
-                Now I am studying on Chattogram Polytechnic Institute. I am a
-                student of Electronics Department
+                I have completed my Diploma in Electronics from Chattogram
+                Polytechnic Institute with a CGPA of 3.11 out of 4.00.
               </p>
             </div>
             <hr />
@@ -46,9 +65,8 @@ const ExperienceEducation = () => {
                 Halishahar Alhaj Mohabbat Ali City Corp. High School
               </div>
               <p className="text-[#B1B1A2]">
-                I completed my SSC examination, In 2020, At the school of
-                Chattogram which is the renowned school of Chattogram that is
-                Halishahar Alhaj Mohobbat Ali City Corporation High School.
+                Completed SSC in 2020 from Halishahar Alhaj Mohobbat Ali City
+                Corporation High School with a GPA of 4.67 out of 5.00.
               </p>
             </div>
             <hr />
