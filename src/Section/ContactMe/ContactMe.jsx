@@ -2,18 +2,24 @@ import { FaLocationArrow, FaMessage, FaPhone } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import Container from "../../components/Container";
 import Title from "../../components/Title";
+import { motion } from "framer-motion"; // Import framer-motion for animations
 
 const ContactMe = () => {
   return (
-    <section id="contact" className="bg-[#060606] text-white">
-      <Title first={"Contact"} last={"Me"}></Title>
-      <div className="hero min-h-screen ">
+    <section id="contact" className="bg-[#111111] text-white">
+      <Title first={"Contact"} last={"Me"} />
+      <div className="hero min-h-screen">
         <Container>
           <div className="lg:flex gap-4">
-            <div className="flex-1 space-y-3">
+            {/* Left Section */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex-1 space-y-3">
               <h5 className="text-[25px] text-[#B1B1A2]">Get In Touch</h5>
               <h1 className="md:text-6xl text-4xl font-bold">
-                Let’s Talk For your <br />{" "}
+                Let’s Talk For your <br />
                 <span className="text-[#C9F31D]">Next Projects</span>
               </h1>
               <p className="py-6 text-[#B1B1A2]">
@@ -24,24 +30,30 @@ const ContactMe = () => {
               <p className="text-[29px] font-semibold">More Info</p>
               <div className="space-y-5">
                 <div className="flex gap-6 items-center">
-                  <FaLocationArrow className="text-[#C9F31D] text-3xl"></FaLocationArrow>
+                  <FaLocationArrow className="text-[#C9F31D] text-3xl" />
                   <p className="text-[#B1B1A2] text-xl">
                     Chattogram, Bangladesh
                   </p>
                 </div>
                 <div className="flex gap-6 items-center">
-                  <MdOutlineEmail className="text-[#C9F31D] text-3xl"></MdOutlineEmail>
+                  <MdOutlineEmail className="text-[#C9F31D] text-3xl" />
                   <p className="text-[#B1B1A2] md:text-xl">
                     nasifulislamnasif23@gmail.com
                   </p>
                 </div>
                 <div className="flex gap-6 pb-6 items-center md:pb-6">
-                  <FaPhone className="text-[#C9F31D] text-3xl"></FaPhone>
+                  <FaPhone className="text-[#C9F31D] text-3xl" />
                   <p className="text-[#B1B1A2] text-xl">01849206410</p>
                 </div>
               </div>
-            </div>
-            <div className="bg-[#1F1F1F] p-8 rounded-3xl flex-1 mb-12">
+            </motion.div>
+
+            {/* Right Section (Form) */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="bg-[#1F1F1F] p-8 rounded-3xl flex-1 mb-12">
               <div className="lg:flex gap-6 pb-6">
                 <label className="form-control w-full">
                   <div className="label">
@@ -111,11 +123,10 @@ const ContactMe = () => {
               </label>
               <div className="mt-12">
                 <button className="btn bg-[#C9F31D] border-0 text-black text-[19px] font-medium px-7">
-                  {" "}
-                  <FaMessage></FaMessage> Send Me Message
+                  <FaMessage /> Send Me Message
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </Container>
       </div>
@@ -124,7 +135,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-
-{
-  /* */
-}

@@ -15,6 +15,11 @@
       "percentage": 80
     },
     {
+      "skillName": "TypeScript",
+      "logo": "https://i.ibb.co.com/mF2nM9YT/typescript-original-logo-icon-146317.png",
+      "percentage": 80
+    },
+    {
       "skillName": "Tailwind",
       "logo": "https://i.ibb.co/2tNvdnY/pngwing-com.png",
       "percentage": 75
@@ -27,6 +32,21 @@
     {
       "skillName": "React",
       "logo": "https://i.ibb.co/QQWDBk4/pngwing-com-2.png",
+      "percentage": 88
+    },
+    {
+      "skillName": "Next.js",
+      "logo": "https://i.ibb.co.com/gZwrwYvW/logo-291886093470.jpg",
+      "percentage": 88
+    },
+    {
+      "skillName": "Redux",
+      "logo": "https://i.ibb.co.com/nstrtjR3/redux-original-logo-icon-146365.png",
+      "percentage": 88
+    },
+    {
+      "skillName": "Mongoose",
+      "logo": "https://i.ibb.co.com/v4cnbc8n/1-r-L8-Buu7o6jn-G-TYV1-Wube-Q.webp",
       "percentage": 88
     },
     {
