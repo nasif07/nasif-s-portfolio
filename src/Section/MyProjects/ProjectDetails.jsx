@@ -5,14 +5,14 @@ import project3 from "../../assets/pet-adoption-project.png";
 
 const projectData = {
   1: {
-    title: "Dream Car Shop",
+    title: "Feedme",
     description:
-      "A full-featured car marketplace with admin and user dashboard.",
+      "FeedMe is a Meal Planning & Delivery Web Application that allows users to personalize their meal plans and schedule deliveries based on their dietary preferences. Customers can browse available meal options, select meals based on their preferences, and schedule delivery. Meal providers can manage menus, respond to customer orders, and track deliveries..",
     image: project1,
   },
   2: {
-    title: "Knowledge Library",
-    description: "An online library system to share and read books.",
+    title: "Stationary Shop",
+    description: "This is a simple MERN stack application for a stationary shop. It allows users to explore and purchase products. Admin & normal user have individual dashboard. The application has RBAC (role based access control) integration for smooth Management.",
     image: project2,
   },
   3: {
