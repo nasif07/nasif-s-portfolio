@@ -1,156 +1,77 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import project1 from "../../assets/car-shop-project.png";
 import project2 from "../../assets/lobrary-project.png";
 import project3 from "../../assets/pet-adoption-project.png";
-import project4 from "../../assets/event-agency.png";
 import Title from "../../components/Title";
 import Container from "../../components/Container";
 import { FaEye, FaGithub } from "react-icons/fa6";
+
+const projects = [
+  {
+    id: 1,
+    image: project1,
+    live: "https://dream-car-shop.web.app/",
+    client: "https://github.com/nasif07/dream-car-shop-client?tab=readme-ov-file",
+    server: "https://github.com/nasif07/dream-car-shop-server",
+    title: "Dream Car Shop",
+    description: "A full-featured car marketplace with admin and user dashboard.",
+  },
+  {
+    id: 2,
+    image: project2,
+    live: "https://knowledge-library-c3978.web.app/",
+    client: "https://github.com/nasif07/knowledge-library-client?tab=readme-ov-file",
+    server: "https://github.com/nasif07/knowledge-library-server",
+    title: "Knowledge Library",
+    description: "An online library system to share and read books.",
+  },
+  {
+    id: 3,
+    image: project3,
+    live: "https://paw-vista.web.app/",
+    client: "https://github.com/nasif07/paw-vista-pet-adoption-client",
+    server: "https://github.com/nasif07/paw-vista-pet-adoption-server",
+    title: "Paw Vista",
+    description: "A pet adoption platform connecting owners and adopters.",
+  },
+];
+
 const MyProjects = () => {
-  const [isHovered, setHovered] = useState(false);
-  const boxStyle = {
-    background: "#000",
-    backgroundPosition: isHovered ? "bottom" : "top",
-    transition: "ease-in-out 5s",
-    margin: "auto",
-  };
-  const box1style = {
-    background: `url(${project1})`,
-    backgroundSize: "cover",
-  };
-  const box2style = {
-    background: `url(${project2})`,
-    backgroundSize: "cover",
-  };
-  const box3style = {
-    background: `url(${project3})`,
-    backgroundSize: "cover",
-  };
-  const box4style = {
-    background: `url(${project4})`,
-    backgroundSize: "cover",
-  };
   return (
     <section id="projects" className="bg-[#111111] ">
-      <Title first={"My"} last={"Projects"}></Title>
+      <Title first="My" last="Projects" />
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto lg:py-20 md:py-14 py-6">
-          <div>
-            <div
-              style={{
-                ...boxStyle,
-                ...box1style,
-                hover: { backgroundPosition: "top" },
-              }}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              className="w-[280px] h-[260px] md:w-[480px] md:h-[400px]"></div>
-            <div className="flex justify-around md:px-12 my-12">
-              <a target="_blank" href="https://dream-car-shop.web.app/">
-                <button className="btn bg-[#C9F31D] border-0">
-                  <FaEye></FaEye>Live Link
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/dream-car-shop-client?tab=readme-ov-file">
-                <button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]">
-                  <FaGithub></FaGithub>Client Code
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/dream-car-shop-server">
-                <button className="btn hidden md:flex bg-[#C9F31D] border-0">
-                  <FaGithub></FaGithub>Server Code
-                </button>
-              </a>
+          {projects.map((project) => (
+            <div key={project.id}>
+              <Link to={`/project-details/${project.id}`}>
+                <div
+                  style={{
+                    background: `url(${project.image})`,
+                    backgroundSize: "cover",
+                  }}
+                  className="cursor-pointer w-[280px] h-[260px] md:w-[480px] md:h-[400px]"
+                />
+              </Link>
+              <div className="flex justify-around md:px-12 my-12">
+                <a target="_blank" href={project.live}>
+                  <button className="btn bg-[#C9F31D] border-0">
+                    <FaEye /> Live Link
+                  </button>
+                </a>
+                <a target="_blank" href={project.client}>
+                  <button className="btn bg-[#070707] text-white border-[#C9F31D] border-1">
+                    <FaGithub /> Client Code
+                  </button>
+                </a>
+                <a target="_blank" href={project.server}>
+                  <button className="btn hidden md:flex bg-[#C9F31D] border-0">
+                    <FaGithub /> Server Code
+                  </button>
+                </a>
+              </div>
             </div>
-          </div>
-          <div>
-            <div
-              style={{ ...boxStyle, ...box2style }}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              className="w-[280px] h-[260px] md:w-[480px] md:h-[400px]"></div>
-            <div className="flex justify-around md:px-12 my-12">
-              <a
-                target="_blank"
-                href="https://knowledge-library-c3978.web.app/">
-                <button className="btn bg-[#C9F31D] border-0">
-                  <FaEye></FaEye>Live Link
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/knowledge-library-client?tab=readme-ov-file">
-                <button className="btn bg-[#070707] border-1 text-white border-[#C9F31D]">
-                  <FaGithub></FaGithub>Client Code
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/knowledge-library-server">
-                <button className="btn hidden md:flex  bg-[#C9F31D] border-0">
-                  <FaGithub></FaGithub>Server Code
-                </button>
-              </a>
-            </div>
-          </div>
-          <div>
-            <div
-              style={{ ...boxStyle, ...box3style }}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              className="w-[280px] h-[260px] md:w-[480px] md:h-[400px]"></div>
-            <div className="flex justify-around md:px-12 my-12">
-              <a target="_blank" href="https://paw-vista.web.app/">
-                <button className="btn bg-[#C9F31D] border-0">
-                  <FaEye></FaEye>Live Link
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/paw-vista-pet-adoption-client">
-                <button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]">
-                  <FaGithub></FaGithub>Client Code
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/paw-vista-pet-adoption-server">
-                <button className="btn hidden md:flex  bg-[#C9F31D] border-0">
-                  <FaGithub></FaGithub>Server Code
-                </button>
-              </a>
-            </div>
-          </div>
-          <div>
-            <div
-              style={{ ...boxStyle, ...box4style }}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              className="w-[280px] h-[260px] md:w-[480px] md:h-[400px]"></div>
-            <div className="flex justify-around md:px-12 my-12">
-              <a target="_blank" href="https://event-agency-project.web.app/">
-                <button className="btn bg-[#C9F31D] border-0">
-                  <FaEye></FaEye>Live Link
-                </button>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/nasif07/event-agency-project?tab=readme-ov-file">
-                <button className="btn  bg-[#070707] border-1 text-white border-[#C9F31D]">
-                  <FaGithub></FaGithub>Client Code
-                </button>
-              </a>
-              <a target="_blank" href="">
-                <button className="btn hidden md:flex bg-[#C9F31D] border-0">
-                  <FaGithub></FaGithub>Server Code
-                </button>
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </Container>
     </section>
