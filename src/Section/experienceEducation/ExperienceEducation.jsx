@@ -7,10 +7,59 @@ import { motion } from "framer-motion"; // import motion from framer-motion
 
 const ExperienceEducation = () => {
   return (
-    <section id="backend" className="bg-[#060606] text-white pt-5">
+    <section id="backend" className="bg-[#060606] text-white py-5">
       <Title first={"My"} last={"Backend"}></Title>
       <Container>
-        <h1 className="text-center pb-5 md:pb-14 text-2xl font-semibold md:pt-16">
+        <h1 className="text-center py-5 md:py-10 text-2xl font-semibold">
+          My Experience
+        </h1>
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical lg:pb-16 md:pb-12 pb-6">
+          <li>
+            <div className="timeline-middle">
+              <MdDeveloperMode className="text-[#C9F31D] text-3xl m-3 mt-0"></MdDeveloperMode>
+            </div>
+            <div className="timeline-end md:text-start mb-10 space-y-2.5 max-w-[450px]">
+              <time className="font-mono italic text-[#B1B1A2]">
+                May 2024 - Oct 2024
+              </time>
+              <div className="text-[20px] font-medium text-[#C9F31D]">
+                Front End Developer
+              </div>
+              <div className="lg:text-2xl md:text-[18px] font-black">
+                Kuppon.io
+              </div>
+              <p className="text-[#B1B1A2]">
+                Contributed to building and optimizing user interfaces, ensuring
+                responsive design, smooth functionality, and better user
+                experience across devices.
+              </p>
+            </div>
+            <hr />
+          </li>
+          <li>
+            <div className="timeline-middle">
+              <MdDeveloperMode className="text-[#C9F31D] text-3xl m-3 mt-0"></MdDeveloperMode>
+            </div>
+            <div className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px]">
+              <time className="font-mono italic text-[#B1B1A2]">
+                2022-Present
+              </time>
+              <div className="text-[20px] font-medium text-[#C9F31D]">
+                Web Development
+              </div>
+              <div className="lg:text-2xl md:text-[18px] font-black">
+                3 year + self-learning Experience
+              </div>
+              <p className="text-[#B1B1A2]">
+                I completed my full Stack Web Development Course from
+                Programming Hero.
+              </p>
+            </div>
+            <hr />
+          </li>
+        </ul>
+
+        <h1 className="text-center  text-2xl font-semibold py-5 md:py-10">
           My Educational Background
         </h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -73,33 +122,6 @@ const ExperienceEducation = () => {
               <p className="text-[#B1B1A2]">
                 Completed SSC in 2020 from Halishahar Alhaj Mohobbat Ali City
                 Corporation High School with a GPA of 4.67 out of 5.00.
-              </p>
-            </div>
-            <hr />
-          </li>
-        </ul>
-
-        <h1 className="text-center p-14 text-2xl font-semibold">
-          My Experience
-        </h1>
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical lg:pb-16 md:pb-12 pb-6">
-          <li>
-            <div className="timeline-middle">
-              <MdDeveloperMode className="text-[#C9F31D] text-3xl m-3 mt-0"></MdDeveloperMode>
-            </div>
-            <div className="timeline-start md:text-end mb-10 space-y-2.5 max-w-[450px]">
-              <time className="font-mono italic text-[#B1B1A2]">
-                2021-Present
-              </time>
-              <div className="text-[20px] font-medium text-[#C9F31D]">
-                Web Development
-              </div>
-              <div className="lg:text-2xl md:text-[18px] font-black">
-                2 year + self-learning Experience
-              </div>
-              <p className="text-[#B1B1A2]">
-                I completed my full Stack Web Development Course from
-                Programming Hero.
               </p>
             </div>
             <hr />

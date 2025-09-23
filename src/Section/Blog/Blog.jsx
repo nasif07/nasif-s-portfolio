@@ -26,7 +26,7 @@ const Blog = () => {
     <section id="blog" className="bg-[#060606] pt-16 text-white pb-12">
       <Title first={"My"} last={"Blogs"} />
       <Container>
-        <div className="lg:flex justify-around items-center lg:py-16 flex-wrap gap-6">
+        <div className="flex justify-around items-center lg:py-16 flex-wrap gap-6">
           {blogPosts.map((post) => (
             <motion.div
               key={post.id}
