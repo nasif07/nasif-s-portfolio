@@ -23,8 +23,8 @@ const AboutMe = () => {
           <motion.div
             className="mx-auto flex items-center justify-center flex-1"
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
             viewport={{ once: false, amount: 0.3 }}
           >
             <img
@@ -36,9 +36,9 @@ const AboutMe = () => {
 
           <motion.div
             className="space-y-3 flex-1"
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
             viewport={{ once: false, amount: 0.3 }}
           >
             <h5 className="md:text-[25px] pt-4 text-[#B1B1A2]">Know Me More</h5>

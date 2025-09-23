@@ -7,20 +7,15 @@ import { motion } from "framer-motion"; // import motion from framer-motion
 
 const ExperienceEducation = () => {
   return (
-    <section id="backend" className="bg-[#060606] text-white">
+    <section id="backend" className="bg-[#060606] text-white pt-5">
       <Title first={"My"} last={"Backend"}></Title>
       <Container>
-        <h1 className="text-center pb-14 text-2xl font-semibold">
+        <h1 className="text-center pb-5 md:pb-14 text-2xl font-semibold md:pt-16">
           My Educational Background
         </h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {/* Educational Items */}
-          <motion.li
-            initial={{ opacity: 0, x: -50 }} // starts with slight opacity and move from left
-            whileInView={{ opacity: 1, x: 0 }} // smooth transition to full opacity and reset x-axis
-            transition={{ duration: 1, ease: "easeInOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-          >
+          <li>
             <div className="timeline-middle">
               <FaBook className="text-[#C9F31D] text-2xl m-3 mt-0"></FaBook>
             </div>
@@ -40,14 +35,9 @@ const ExperienceEducation = () => {
               </p>
             </div>
             <hr />
-          </motion.li>
+          </li>
 
-          <motion.li
-            initial={{ opacity: 0, x: 50 }} // starts with slight opacity and move from right
-            whileInView={{ opacity: 1, x: 0 }} // smooth transition to full opacity and reset x-axis
-            transition={{ duration: 1, ease: "easeInOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-          >
+          <li>
             <div className="timeline-middle">
               <FaBook className="text-[#C9F31D] text-2xl m-3 mt-0"></FaBook>
             </div>
@@ -65,14 +55,9 @@ const ExperienceEducation = () => {
               </p>
             </div>
             <hr />
-          </motion.li>
+          </li>
 
-          <motion.li
-            initial={{ opacity: 0, x: -50 }} // starts with slight opacity and move from left
-            whileInView={{ opacity: 1, x: 0 }} // smooth transition to full opacity and reset x-axis
-            transition={{ duration: 1, ease: "easeInOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-          >
+          <li>
             <hr />
             <div className="timeline-middle">
               <FaBook className="text-[#C9F31D] text-2xl m-3"></FaBook>
@@ -91,19 +76,14 @@ const ExperienceEducation = () => {
               </p>
             </div>
             <hr />
-          </motion.li>
+          </li>
         </ul>
 
         <h1 className="text-center p-14 text-2xl font-semibold">
           My Experience
         </h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical lg:pb-16 md:pb-12 pb-6">
-          <motion.li
-            initial={{ opacity: 0, x: 50 }} // starts with slight opacity and move from right
-            whileInView={{ opacity: 1, x: 0 }} // smooth transition to full opacity and reset x-axis
-            transition={{ duration: 1, ease: "easeInOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-          >
+          <li>
             <div className="timeline-middle">
               <MdDeveloperMode className="text-[#C9F31D] text-3xl m-3 mt-0"></MdDeveloperMode>
             </div>
@@ -123,7 +103,7 @@ const ExperienceEducation = () => {
               </p>
             </div>
             <hr />
-          </motion.li>
+          </li>
         </ul>
       </Container>
     </section>

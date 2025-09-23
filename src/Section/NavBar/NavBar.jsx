@@ -8,6 +8,9 @@ const NavBar = () => {
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
           <div className="w-full navbar  max-w-[1600px] mx-auto">
+            <h3 className="flex-1 text-xl md:text-2xl font-bold text-[#C9F31D]  max-w-[1600px] mx-auto">
+              N.A.S.I.F
+            </h3>
             <div className="flex-none md:hidden">
               <label
                 htmlFor="my-drawer-3"
@@ -25,9 +28,6 @@ const NavBar = () => {
                     d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
               </label>
-            </div>
-            <div className="flex-1 text-xl md:text-2xl font-bold text-[#C9F31D]  max-w-[1600px] mx-auto">
-              N.A.S.I.F
             </div>
             <div className="flex-none hidden md:block">
               <ul className="gap-7 menu-horizontal text-base font-semibold">

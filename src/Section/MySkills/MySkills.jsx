@@ -12,14 +12,14 @@ const MySkills = () => {
   }, []);
 
   return (
-    <section id="skill" className="bg-[#111]">
+    <section id="skill" className="bg-[#111] pt-5">
       <Title
         first={"My"}
         last={"Skills"}
         description={"Let’s Explore Popular Skills & Experience"}
       />
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 py-20">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-12 py-6 md:py-10">
           {skills.map((skill) => (
             <motion.div
               key={skill.skillName}
@@ -30,8 +30,8 @@ const MySkills = () => {
               }} // starts at 95% scale and 0 opacity for the soft fade-in effect
               whileInView={{
                 opacity: 1, // Becomes fully visible
-                scale: 1,   // Reaches normal scale
-              }} 
+                scale: 1, // Reaches normal scale
+              }}
               transition={{
                 duration: 1, // Slower, softer transition
                 ease: "easeInOut", // Smooth easing for a soft effect
@@ -57,6 +57,32 @@ const MySkills = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Static Soft Skills Section */}
+        <div className="pb-20">
+          <h3 className="text-white text-2xl font-semibold mb-6">
+            Soft Skills
+          </h3>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {[
+              "Communication",
+              "Teamwork",
+              "Problem Solving",
+              "Adaptability",
+              "Time Management",
+            ].map((softSkill, index) => (
+              <motion.div
+                key={softSkill}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="bg-[#1F1F1F] rounded-xl text-white p-3 md:p-6 text-center shadow-md hover:scale-105 transition-all duration-200 ease-in-out">
+                <p className="text-lg font-medium">{softSkill}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </Container>
     </section>

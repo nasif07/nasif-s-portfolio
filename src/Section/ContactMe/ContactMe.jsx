@@ -6,16 +6,16 @@ import { motion } from "framer-motion"; // Import framer-motion for animations
 
 const ContactMe = () => {
   return (
-    <section id="contact" className="bg-[#111111] text-white">
+    <section id="contact" className="bg-[#111111] text-white pt-5">
       <Title first={"Contact"} last={"Me"} />
       <div className="hero min-h-screen">
         <Container>
           <div className="lg:flex gap-4">
             {/* Left Section */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
               className="flex-1 space-y-3">
               <h5 className="text-[25px] text-[#B1B1A2]">Get In Touch</h5>
               <h1 className="md:text-6xl text-4xl font-bold">
@@ -50,10 +50,10 @@ const ContactMe = () => {
 
             {/* Right Section (Form) */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="bg-[#1F1F1F] p-8 rounded-3xl flex-1 mb-12">
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="bg-[#1F1F1F] p-4 md:p-8 rounded-3xl flex-1 mb-12">
               <div className="lg:flex gap-6 pb-6">
                 <label className="form-control w-full">
                   <div className="label">
